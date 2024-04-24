@@ -1,0 +1,25 @@
+.login-success {
+    position: relative; /* Thiết lập vị trí tương đối */
+    display: flex;
+    align-items: center; /* Để căn giữa các item theo chiều dọc */
+}
+
+.login-success button {
+    margin-left: 10px;
+    background-color: #4f9cea;
+    color: white;
+    border: none;
+}
+
+.login-success span{
+    margin-left: 10px;
+}
+
+.login-success img{
+    top: 50%;
+    left: 50%;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

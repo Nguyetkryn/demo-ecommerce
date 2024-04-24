@@ -1,0 +1,45 @@
+.account-information {
+    width: 100%;
+    margin: 10px;
+}
+
+.avatar-user img{
+    margin-top: 45px;
+    margin-left: 50px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.top {
+    height: 250px;
+    background-color: #e3f2fd;
+}
+
+.bottom {
+    height: auto;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+}
+
+.account label {
+    font-size: 20px;
+}
+
+.left, .right {
+    display: inline-block; /* hoặc sử dụng display: inline; */
+    box-sizing: border-box; /* giữ cho kích thước của các hộp không thay đổi khi thêm padding hoặc border */
+    padding: 10px; /* padding để phân biệt rõ ràng hơn */
+    box-sizing: border-box; /* giữ cho kích thước của các hộp không thay đổi khi thêm padding hoặc border */
+}
+
+.left {
+    width: 25%;
+}
+
+.right {
+    width: 75%;
+}

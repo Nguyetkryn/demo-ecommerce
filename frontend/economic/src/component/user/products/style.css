@@ -1,0 +1,93 @@
+.path-product {
+    display: flex; /*các phần tử trên 1 hàng*/
+}
+
+.path-product {
+    background-color: antiquewhite;
+    padding-top: 10px;
+
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.product-detail {
+    width: 100%;
+    background-color: aqua;
+    height: 100vh;
+
+    .top-product-content {
+        background-color: aquamarine;
+        display: flex;
+        align-items: stretch; /*các item con sẽ co giãn để chiếm toàn bộ chiều cao của .top*/
+        height: 50vh;
+
+        .product-images {
+            background-color: blue;
+            width: 45%;
+            height: 50vh;
+        }
+    
+        .product-infor {
+            background-color: blueviolet;
+            padding-top: 100px;
+            padding-left: 25px;
+            width: 65%;
+            font-size: 50;
+            height: 50vh;
+
+            table {
+                font-size: 20px;
+            }
+
+            button {
+                margin: 10px 10px;
+                color: white;
+                background-color: dodgerblue;
+                border: none;
+                border-radius: 5%;
+                /* padding: 5px 15px; */
+                gap: 15px;
+            }
+        }
+    }
+    
+    .bottom-product-content {
+        height: auto;
+        background-color: brown;
+        margin-top: 250px;
+        display: flex;
+        align-self: stretch;
+
+        .product-description {
+            font-size: 20px;
+        }
+    }
+}
+
+
+/*----------------Product Images---------------*/
+.large-image {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail-container {
+    width: 45%;
+    display: flex;
+    justify-self: center;
+    gap: 10px; /*khoảng cách giữa các hình ảnh nhỏ*/
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 60px !important; /*chiều rộng của hình ảnh nhỏ*/
+    height: 60px !important; /*chiều cao của hình ảnh nhỏ*/
+    object-fit: cover; /*giữ nguyên tỷ lệ hình ảnh, cắt bớt nếu cần*/
+    cursor: pointer; /*thay đổi con trỏ khi di chuột qua hình ảnh nhỏ*/
+}
