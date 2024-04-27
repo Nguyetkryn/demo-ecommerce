@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import './style.css';
 import { Fomater } from '../../../utils/fomater';
 import ProductImageComponent from './ProductImageComponent';
+import ProductSuggestionComponent from './ProductSuggestionComponent';
 
 const ProductDetailComponent = () => {
 
@@ -94,16 +95,15 @@ const ProductDetailComponent = () => {
 
                     </div>
                     <div className="bottom-product-content">
-                        <div className="product-description">
-                            <p>{description}</p>
-                        </div>
+                        <p>{description}</p>
+                        {/* <div className="product-description">
+
+                        </div> */}
                     </div>
 
                 </div>
-
-                <div className="product-suggestions">
-                    <p>Product suggestions</p>
-                </div>
+                
+                <ProductSuggestionComponent />
             </div>
         </div>
     )

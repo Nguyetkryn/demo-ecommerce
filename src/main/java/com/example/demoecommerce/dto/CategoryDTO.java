@@ -1,5 +1,6 @@
 package com.example.demoecommerce.dto;
 
+import com.example.demoecommerce.dto.baseDto.AbstractDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CategoryDTO {
+public class CategoryDTO extends AbstractDTO {
     private String categoryId;
     private String categoryName;
     private List<String> products;

@@ -1,0 +1,10 @@
+.products {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+.thumbnail-product {
+    height: 250px;
+    width: 250px;
+    background-color: #e3f2fd;
+}

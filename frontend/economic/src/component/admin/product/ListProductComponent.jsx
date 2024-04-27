@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { listProduct } from '../../../service/admin/ProductService';
 import ListProductImageComponent from './ListProductImageComponent';
 import { Fomater } from '../../../utils/fomater';
+import './style.css'
 
 const ListProductComponent = () => {
 
@@ -36,7 +37,7 @@ const ListProductComponent = () => {
                     <div className='section-title'>
                         {products.map(product => (
                             <div key={product.productId} className='products'>
-                                <div className='thumbnail'>
+                                <div className='thumbnail-product'>
                                     <ListProductImageComponent product={product} />
                                 </div>
                                 <div>

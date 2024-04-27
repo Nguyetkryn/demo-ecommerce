@@ -14,7 +14,7 @@ const ListProductImageComponent = ({ product }) => {
     
     return (
         <div>
-            <img className='product-thumbnail' src={image.imageUrl} alt={`${image.imageId}`} />
+            <img className='thumbnail-product' src={image.imageUrl} alt={`${image.imageId}`} />
         </div>
     )
 }

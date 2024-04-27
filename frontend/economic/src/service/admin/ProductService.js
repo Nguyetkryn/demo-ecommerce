@@ -6,3 +6,4 @@ export const listProduct = () => axios.get(REST_API_BASE_URL);
 
 //Call Get Product REST API
 export const getProduct = (productId) => axios.get(REST_API_BASE_URL + '/' + productId);
+

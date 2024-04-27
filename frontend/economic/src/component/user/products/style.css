@@ -1,9 +1,10 @@
+/*-----------------------Product Detail Component------------------*/
 .path-product {
     display: flex; /*các phần tử trên 1 hàng*/
 }
 
 .path-product {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     padding-top: 10px;
 
     a {
@@ -18,63 +19,65 @@
 
 .product-detail {
     width: 100%;
-    background-color: aqua;
-    height: 100vh;
-
-    .top-product-content {
-        background-color: aquamarine;
-        display: flex;
-        align-items: stretch; /*các item con sẽ co giãn để chiếm toàn bộ chiều cao của .top*/
-        height: 50vh;
-
-        .product-images {
-            background-color: blue;
-            width: 45%;
-            height: 50vh;
-        }
-    
-        .product-infor {
-            background-color: blueviolet;
-            padding-top: 100px;
-            padding-left: 25px;
-            width: 65%;
-            font-size: 50;
-            height: 50vh;
-
-            table {
-                font-size: 20px;
-            }
-
-            button {
-                margin: 10px 10px;
-                color: white;
-                background-color: dodgerblue;
-                border: none;
-                border-radius: 5%;
-                /* padding: 5px 15px; */
-                gap: 15px;
-            }
-        }
-    }
-    
-    .bottom-product-content {
-        height: auto;
-        background-color: brown;
-        margin-top: 250px;
-        display: flex;
-        align-self: stretch;
-
-        .product-description {
-            font-size: 20px;
-        }
-    }
+    /* background-color: aqua; */
+    height: auto;
 }
 
 
-/*----------------Product Images---------------*/
-.large-image {
-    width: 100%;
+.top-product-content {
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: stretch; /*các item con sẽ co giãn để chiếm toàn bộ chiều cao của .top*/
     height: auto;
+}
+
+.product-images {
+    /* background-color: blue; */
+    width: 45%;
+    height: auto;
+}
+
+.product-infor {
+    /* background-color: blueviolet; */
+    padding-top: 100px;
+    padding-left: 25px;
+    width: 65%;
+    font-size: 50;
+    height: auto;
+
+    table {
+        font-size: 20px;
+    }
+
+    button {
+        margin: 10px 10px;
+        color: white;
+        background-color: dodgerblue;
+        border: none;
+        border-radius: 5%;
+        /* padding: 5px 15px; */
+        gap: 15px;
+    }
+}
+
+.bottom-product-content {
+    height: auto;
+    /* background-color: brown; */
+    margin-top: 20px;
+    display: flex;
+    align-self: stretch;
+}
+
+.bottom-product-content p {
+    font-size: 20px;
+}
+
+/*----------------Product Image Component---------------*/
+.large-image {
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: contain;
+    border: solid 1s #ccc;
 }
 
 .thumbnail-container {
@@ -85,9 +88,59 @@
     margin-top: 20px;
 }
 
-.thumbnail {
+.product-thumbnail {
     width: 60px !important; /*chiều rộng của hình ảnh nhỏ*/
     height: 60px !important; /*chiều cao của hình ảnh nhỏ*/
     object-fit: cover; /*giữ nguyên tỷ lệ hình ảnh, cắt bớt nếu cần*/
     cursor: pointer; /*thay đổi con trỏ khi di chuột qua hình ảnh nhỏ*/
 }
+
+.popup-product {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0); /*một lớp đen semi-transparent để tạo hiệu ứng overplay*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    max-width: 80%; /*điều chỉnh kích thước của popup theo nhu cầu*/
+    max-height: 80%;
+    overflow: auto;/*cho phép cuộn nếu nội dung quá lớn*/
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-image {
+    max-width: 100%; /*đảm bảo hình ảnh không vượt quá kích thước của popup*/
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.popup-product button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*---------------------Product Suggestion Component--------------------*/
+.product-suggestion-container {
+    background-color: red;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
